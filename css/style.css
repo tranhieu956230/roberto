@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+.color-lib__icon {
+  width: 3rem;
+  height: 3rem; }
+
+.color-lib ul {
+  list-style-type: none;
+  fill: blue; }

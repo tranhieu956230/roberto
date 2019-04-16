@@ -1,15 +1,56 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  font-family: inherit; }
 
 html {
   font-size: 62.5%; }
 
-.color-lib__icon {
-  width: 3rem;
-  height: 3rem; }
+body {
+  font-family: "Poppins", sans-serif; }
 
-.color-lib ul {
-  list-style-type: none;
-  fill: blue; }
+.color-lib {
+  background-color: #0E2737; }
+  .color-lib__text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 50px;
+    color: #fff; }
+  .color-lib__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: white;
+    margin-right: 1rem;
+    transition: all .5s; }
+    .color-lib__icon:hover {
+      cursor: pointer; }
+  .color-lib__link {
+    display: inline-block;
+    padding: .5rem;
+    margin-right: 10px;
+    display: flex;
+    align-items: center; }
+    .color-lib__link--mail {
+      margin-right: auto; }
+  .color-lib ul {
+    list-style-type: none;
+    display: flex;
+    width: 60%;
+    margin: 0 auto; }
+    .color-lib ul > * {
+      display: flex; }
+    .color-lib ul .left {
+      margin-right: auto; }
+      .color-lib ul .left li {
+        cursor: pointer; }
+        .color-lib ul .left li span {
+          transition: all .5s; }
+          .color-lib ul .left li span:hover {
+            color: #afb4bf; }
+      .color-lib ul .left svg {
+        fill: #19afa2; }
+    .color-lib ul .right svg:hover {
+      fill: #19afa2; }

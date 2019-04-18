@@ -1,0 +1,41 @@
+.button {
+    display: inline-block;
+    padding: 2.25rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: $color-primary;
+    transition: all .5s;
+    cursor: pointer;
+    border: none;
+    color: $color-white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+
+
+    span {
+        font-family: 'Courier New', Courier, monospace;
+        display: inline-block;
+        transition: all .5s;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-left: 1rem;
+    }
+
+    &:hover span {
+        transform: translateX(.5rem);
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+
+    &__light {}
+
+    &__dark {
+        &:hover {
+            background-color: $text-dark;
+        }
+    }
+}

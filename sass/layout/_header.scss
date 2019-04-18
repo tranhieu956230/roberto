@@ -1,0 +1,105 @@
+.header {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-white;
+    border-bottom: solid 1px $text-gray;
+
+    &__nav {
+        width: 60rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex: 1;
+
+    }
+
+    &__logo {
+        width: 14.5rem;
+        height: auto;
+    }
+
+    &__list {
+        display: flex;
+        font-size: 1.75rem;
+        list-style-type: none;
+        justify-content: space-around;
+    }
+
+    &__item {
+
+        &:hover {
+            &>a span {
+                transform: translateX(5px) rotate(90deg);
+            }
+
+            &>nav {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+
+
+        }
+
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 1rem;
+        color: $text-dark;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all .3s;
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+        text-transform: capitalize;
+        height: 2rem;
+
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        span {
+            font-size: 3rem;
+            font-weight: 300;
+            margin-left: .5rem;
+            transition: transform .3s;
+            display: inline-block;
+        }
+
+
+        &:link,
+        &:visited {
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: $text-gray;
+        }
+
+
+    }
+
+
+
+    &__icon {
+        width: 1.75rem;
+        height: 1.75rem;
+        transition: all .3s;
+        fill: $text-dark;
+        cursor: pointer;
+
+        &:hover {
+            fill: $color-primary;
+        }
+
+        &:active {
+            transform: translateY(3px)
+        }
+
+    }
+
+}

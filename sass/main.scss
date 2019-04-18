@@ -5,6 +5,11 @@
 @import "base/reset";
 @import "base/typography";
 
+@import "components/button";
+@import "components/dropdown";
+
+
 @import "layout/color-lib";
+@import "layout/header";
 
 @import "pages/home";

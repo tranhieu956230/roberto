@@ -12,6 +12,83 @@ html {
 body {
   font-family: "Poppins", sans-serif; }
 
+.margin-left-big {
+  margin-left: 6rem; }
+
+.margin-left-medium {
+  margin-left: 4rem; }
+
+.margin-left-small {
+  margin-left: 2rem; }
+
+.button {
+  display: inline-block;
+  padding: 2.25rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: #19afa2;
+  transition: all .5s;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  align-items: center; }
+  .button span {
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+    transition: all .5s;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-left: 1rem; }
+  .button:hover span {
+    transform: translateX(0.5rem); }
+  .button:focus {
+    outline: none; }
+  .button__dark:hover {
+    background-color: #2a303b; }
+
+.drop-down {
+  position: absolute;
+  z-index: 10;
+  box-shadow: 0.5rem 1rem 4rem 0.5rem rgba(0, 0, 0, 0.1);
+  padding: .5rem 1.5rem;
+  border-radius: .75rem;
+  background-color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s;
+  transform: translateY(1.5rem);
+  min-width: 18rem; }
+  .drop-down__list {
+    list-style-type: none; }
+  .drop-down__item {
+    padding: 1rem; }
+    .drop-down__item:not(:last-child) {
+      border-bottom: solid 1px rgba(175, 180, 191, 0.35); }
+    .drop-down__item:hover span {
+      transform: translateX(5px) rotate(90deg); }
+    .drop-down__item:hover > nav {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0); }
+  .drop-down__link {
+    color: #2a303b;
+    display: inline-block;
+    transition: all .3s; }
+    .drop-down__link span {
+      font-size: 3rem;
+      font-weight: 300;
+      margin-left: .5rem;
+      transition: transform .3s;
+      display: inline-block; }
+    .drop-down__link:link, .drop-down__link:active {
+      text-decoration: none; }
+    .drop-down__link:hover {
+      color: #19afa2; }
+
 .color-lib {
   background-color: #0E2737; }
   .color-lib__text {
@@ -22,7 +99,7 @@ body {
   .color-lib__icon {
     width: 1.5rem;
     height: 1.5rem;
-    fill: white;
+    fill: #fff;
     margin-right: 1rem;
     transition: all .5s; }
     .color-lib__icon:hover {
@@ -45,12 +122,76 @@ body {
     .color-lib ul .left {
       margin-right: auto; }
       .color-lib ul .left li {
-        cursor: pointer; }
+        cursor: pointer;
+        transition: all .5s; }
         .color-lib ul .left li span {
           transition: all .5s; }
-          .color-lib ul .left li span:hover {
-            color: #afb4bf; }
+        .color-lib ul .left li:hover span {
+          color: #afb4bf; }
       .color-lib ul .left svg {
         fill: #19afa2; }
     .color-lib ul .right svg:hover {
       fill: #19afa2; }
+
+.header {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: solid 1px #afb4bf; }
+  .header__nav {
+    width: 60rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1; }
+  .header__logo {
+    width: 14.5rem;
+    height: auto; }
+  .header__list {
+    display: flex;
+    font-size: 1.75rem;
+    list-style-type: none;
+    justify-content: space-around; }
+  .header__item:hover > a span {
+    transform: translateX(5px) rotate(90deg); }
+  .header__item:hover > nav {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); }
+  .header__link {
+    display: inline-block;
+    padding: 1rem;
+    color: #2a303b;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    position: relative; }
+    .header__link span {
+      font-size: 3rem;
+      font-weight: 300;
+      margin-left: .5rem;
+      transition: transform .3s;
+      display: inline-block; }
+    .header__link:link, .header__link:visited {
+      text-decoration: none; }
+    .header__link:hover {
+      color: #afb4bf; }
+  .header__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    transition: all .3s;
+    fill: #2a303b;
+    cursor: pointer; }
+    .header__icon:hover {
+      fill: #19afa2; }
+    .header__icon:active {
+      transform: translateY(3px); }

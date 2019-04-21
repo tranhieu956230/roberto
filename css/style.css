@@ -139,8 +139,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
-  border-bottom: solid 1px #afb4bf; }
+  background-color: #fff; }
   .header__nav {
     width: 60rem;
     display: flex;
@@ -195,3 +194,36 @@ body {
       fill: #19afa2; }
     .header__icon:active {
       transform: translateY(3px); }
+
+.search {
+  background-color: #19afa2;
+  transition: all 1s ease-out;
+  transform-origin: 0;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden; }
+  .search__container {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1rem; }
+  .search__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: #fff;
+    cursor: pointer; }
+  .search__input {
+    padding: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #2a303b;
+    background-color: transparent;
+    color: #fff; }
+    .search__input:focus {
+      outline: none; }

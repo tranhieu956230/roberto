@@ -89,6 +89,30 @@ body {
     .drop-down__link:hover {
       color: #19afa2; }
 
+* {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden; }
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform .5s ease-out; }
+  .image__1 {
+    background-image: url("/img/16.jpg"); }
+  .image__2 {
+    background-image: url("/img/17.jpg"); }
+  .image__3 {
+    background-image: url("/img/18.jpg"); }
+
 .color-lib {
   background-color: #0E2737; }
   .color-lib__text {
